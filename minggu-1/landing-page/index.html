@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Udacoding Bootcamp Fullstack 12 Minggu — Program intensif belajar web development dari dasar hingga proyek nyata."
+  />
+  <title>Udacoding Bootcamp Fullstack 12 Minggu</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="wrap nav-bar">
+      <a href="#beranda" class="logo">Udacoding Bootcamp</a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Buka menu navigasi" />
+      <label for="menu-toggle" class="hamburger" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-menu" aria-label="Navigasi Utama">
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#kurikulum">Kurikulum</a>
+        <a href="#alur">Alur Daftar</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontak" class="btn btn-primary">Daftar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Fullscreen + 2 CTA -->
+    <section id="beranda" class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <h1>Jadi Fullstack Web Developer dalam 12 Minggu</h1>
+          <p class="lead">
+            Belajar HTML, CSS, JavaScript, PHP, MySQL, dan Git secara terstruktur
+            bersama mentor praktisi hingga siap membangun aplikasi web nyata.
+          </p>
+          <div class="hero-cta">
+            <a href="#kontak" class="btn btn-primary">Daftar Sekarang</a>
+            <a href="#kurikulum" class="btn btn-outline">Lihat Kurikulum</a>
+          </div>
+        </div>
+
+        <img
+          src="assets/hero-bootcamp.svg"
+          alt="Ilustrasi editor kode dan progres Udacoding Bootcamp Fullstack 12 Minggu"
+          width="560"
+          height="420"
+          class="hero-img"
+        />
+      </div>
+    </section>
+
+    <!-- 4 Card Keunggulan (Flexbox) -->
+    <section id="keunggulan" class="section alt">
+      <div class="wrap">
+        <h2 class="section-title">Keunggulan Bootcamp</h2>
+        <div class="keunggulan-flex">
+          <article class="card">
+            <h3>1. Kurikulum Terstruktur</h3>
+            <p>Materi disusun bertahap dari dasar web sampai fullstack tanpa melompati fondasi penting.</p>
+          </article>
+          <article class="card">
+            <h3>2. Mentor Praktisi</h3>
+            <p>Setiap tugas direview langsung agar kamu terbiasa menulis kode bersih dan rapi.</p>
+          </article>
+          <article class="card">
+            <h3>3. Proyek Portofolio</h3>
+            <p>Bukan sekadar teori, kamu membuat proyek nyata tiap modul dan langsung di-deploy.</p>
+          </article>
+          <article class="card">
+            <h3>4. Alur Kerja Tim</h3>
+            <p>Latihan Git branch, Pull Request, dan kolaborasi repo seperti di perusahaan teknologi.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 Card Kurikulum (CSS Grid: 1 / 2 / 3 kolom) -->
+    <section id="kurikulum" class="section">
+      <div class="wrap">
+        <h2 class="section-title">Kurikulum 12 Minggu</h2>
+        <div class="kurikulum-grid">
+          <article class="card" data-minggu="1–2" aria-label="Minggu 1 sampai 2: HTML, CSS & Git/GitHub">
+            <h3>HTML, CSS &amp; Git/GitHub</h3>
+            <p>HTML semantik, CSS responsif (Flexbox &amp; Grid), aksesibilitas, dan deploy GitHub Pages.</p>
+          </article>
+          <article class="card" data-minggu="3–4" aria-label="Minggu 3 sampai 4: JavaScript & DOM">
+            <h3>JavaScript &amp; DOM</h3>
+            <p>Dasar ES6+, manipulasi DOM, event handling, dan mengambil data dengan Fetch API.</p>
+          </article>
+          <article class="card" data-minggu="5–6" aria-label="Minggu 5 sampai 6: PHP 8 Dasar">
+            <h3>PHP 8 Dasar</h3>
+            <p>Logika backend PHP 8.1+, pengolahan form, session, dan struktur proyek modular.</p>
+          </article>
+          <article class="card" data-minggu="7–8" aria-label="Minggu 7 sampai 8: Database MySQL">
+            <h3>Database MySQL</h3>
+            <p>Desain tabel relasional, query SQL, dan CRUD aman menggunakan PDO prepared statements.</p>
+          </article>
+          <article class="card" data-minggu="9–10" aria-label="Minggu 9 sampai 10: REST API & Autentikasi">
+            <h3>REST API &amp; Autentikasi</h3>
+            <p>Pembuatan API JSON, login/register, pembagian peran, dan integrasi frontend-backend.</p>
+          </article>
+          <article class="card" data-minggu="11–12" aria-label="Minggu 11 sampai 12: Final Project & Demo Day">
+            <h3>Final Project &amp; Demo Day</h3>
+            <p>Pembangunan proyek akhir tim, audit Lighthouse, deployment, dan presentasi akhir.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alur Pendaftaran 4 Langkah -->
+    <section id="alur" class="section alt">
+      <div class="wrap">
+        <h2 class="section-title">Alur Pendaftaran (4 Langkah)</h2>
+        <ol class="alur-grid">
+          <li class="card">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>Isi Formulir</h3>
+            <p>Lengkapi data diri dan pilih jadwal belajar pada formulir di bawah.</p>
+          </li>
+          <li class="card">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>Tes &amp; Konsultasi</h3>
+            <p>Ikuti tes logika ringan dan diskusi singkat mengenai target belajarmu.</p>
+          </li>
+          <li class="card">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>Onboarding</h3>
+            <p>Terima akses grup peserta, jadwal kelas, dan panduan instalasi tools.</p>
+          </li>
+          <li class="card">
+            <span class="step-num" aria-hidden="true">04</span>
+            <h3>Mulai Bootcamp</h3>
+            <p>Ikuti kelas intensif 12 minggu dan selesaikan proyek portofolio.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 3 Testimoni (Nama Fiktif + Label Contoh) -->
+    <section id="testimoni" class="section">
+      <div class="wrap">
+        <h2 class="section-title">Testimoni Peserta (Contoh)</h2>
+        <div class="testimoni-grid">
+          <article class="card">
+            <span class="badge">Contoh</span>
+            <p class="quote">
+              “Materinya runtut banget untuk pemula, dari HTML/CSS sampai bisa
+              bikin web dinamis PHP dan MySQL sendiri.”
+            </p>
+            <div class="author">
+              <img src="assets/avatar-1.svg" alt="Avatar Raka Pratama (contoh)" width="48" height="48" />
+              <div>
+                <h3>Raka Pratama</h3>
+                <p>Junior Web Developer · Contoh</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="badge">Contoh</span>
+            <p class="quote">
+              “Latihan Pull Request dan review mentor bikin saya percaya diri
+              menjelaskan proyek portofolio saat wawancara.”
+            </p>
+            <div class="author">
+              <img src="assets/avatar-2.svg" alt="Avatar Nadia Kusuma (contoh)" width="48" height="48" />
+              <div>
+                <h3>Nadia Kusuma</h3>
+                <p>Frontend Developer · Contoh</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="badge">Contoh</span>
+            <p class="quote">
+              “Tugas mingguan bikin konsisten ngoding tiap hari sampai berhasil
+              deploy proyek akhir di minggu ke-12.”
+            </p>
+            <div class="author">
+              <img src="assets/avatar-3.svg" alt="Avatar Dimas Saputra (contoh)" width="48" height="48" />
+              <div>
+                <h3>Dimas Saputra</h3>
+                <p>Fullstack Intern · Contoh</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Minimal 5 (details/summary) -->
+    <section id="faq" class="section alt">
+      <div class="wrap faq-wrap">
+        <h2 class="section-title">FAQ (Pertanyaan Umum)</h2>
+
+        <details class="faq-item" open>
+          <summary>Apakah pemula tanpa latar belakang IT bisa mendaftar?</summary>
+          <p>Bisa. Kurikulum dimulai dari dasar instalasi tools, Git, HTML, dan CSS sebelum masuk ke materi lanjutan.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Berapa lama waktu belajar yang dibutuhkan tiap minggu?</summary>
+          <p>Disarankan meluangkan sekitar 15–20 jam per minggu untuk kelas, latihan mandiri, dan tugas proyek.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Apa spesifikasi laptop minimal untuk mengikuti bootcamp?</summary>
+          <p>Laptop RAM minimal 8 GB dengan ruang kosong 20 GB yang bisa menjalankan VS Code, Git, dan Laragon/XAMPP.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Apakah peserta mendapatkan portofolio dan sertifikat?</summary>
+          <p>Ya, peserta yang lulus akan memiliki portofolio publik di GitHub dan sertifikat kelulusan program.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Bagaimana jika mengalami error saat mengerjakan tugas?</summary>
+          <p>Peserta dapat berdiskusi di grup belajar atau meminta arahan mentor lewat sesi mentoring dan Pull Request.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Form Kontak dengan Validasi HTML5 -->
+    <section id="kontak" class="section">
+      <div class="wrap kontak-wrap">
+        <h2 class="section-title">Form Pendaftaran &amp; Kontak</h2>
+
+        <form class="card form-kontak" action="#kontak" method="get">
+          <label for="nama">Nama Lengkap *</label>
+          <input type="text" id="nama" name="nama" placeholder="Nama lengkapmu" minlength="3" required />
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+
+          <label for="telepon">Nomor WhatsApp *</label>
+          <input
+            type="tel"
+            id="telepon"
+            name="telepon"
+            placeholder="081234567890"
+            pattern="[0-9+\-\s]{10,15}"
+            title="Masukkan 10 sampai 15 digit nomor telepon"
+            required
+          />
+
+          <label for="jadwal">Pilih Jadwal *</label>
+          <select id="jadwal" name="jadwal" required>
+            <option value="">-- Pilih jadwal belajar --</option>
+            <option value="reguler">Reguler (Pagi/Siang)</option>
+            <option value="malam">Kelas Malam</option>
+          </select>
+
+          <label for="pesan">Pesan / Target Belajar *</label>
+          <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan target belajarmu..." minlength="10" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Kirim Pendaftaran</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p><strong>Udacoding Bootcamp Fullstack 12 Minggu</strong> — Studi kasus landing page (contoh).</p>
+      <p>&copy; 2026 Magang Udacoding Batch 15 · Afif</p>
+    </div>
+  </footer>
+</body>
+</html>
