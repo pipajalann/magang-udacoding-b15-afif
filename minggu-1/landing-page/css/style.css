@@ -63,11 +63,9 @@ h1, h2, h3, p, ol { margin: 0; padding: 0; list-style: none; }
   place-items: center;
   font-size: clamp(7rem, 10.5vw, 10rem);
   font-weight: 800;
-  font-style: italic;
-  line-height: 0.8;
+  line-height: 0.85;
   letter-spacing: -0.05em;
   white-space: nowrap;
-  transform: rotate(8deg) scaleY(1.1);
   background: linear-gradient(180deg, rgba(29, 78, 216, 0.14) 0%, rgba(29, 78, 216, 0.03) 100%);
   -webkit-background-clip: text;
   background-clip: text;
