@@ -244,34 +244,48 @@
         <h2 class="section-title">Form Pendaftaran &amp; Kontak</h2>
 
         <form class="card form-kontak" action="#kontak" method="get">
-          <label for="nama">Nama Lengkap *</label>
-          <input type="text" id="nama" name="nama" placeholder="Nama lengkapmu" minlength="3" required />
+          <div class="field">
+            <label for="nama">Nama Lengkap *</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama lengkapmu" minlength="3" required />
+          </div>
 
-          <label for="email">Email *</label>
-          <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+          <div class="form-row-2">
+            <div class="field">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+            </div>
 
-          <label for="telepon">Nomor WhatsApp *</label>
-          <input
-            type="tel"
-            id="telepon"
-            name="telepon"
-            placeholder="081234567890"
-            pattern="[0-9+\-\s]{10,15}"
-            title="Masukkan 10 sampai 15 digit nomor telepon"
-            required
-          />
+            <div class="field">
+              <label for="telepon">Nomor WhatsApp *</label>
+              <input
+                type="tel"
+                id="telepon"
+                name="telepon"
+                placeholder="081234567890"
+                pattern="[0-9+\-\s]{10,15}"
+                title="Masukkan 10 sampai 15 digit nomor telepon"
+                required
+              />
+            </div>
+          </div>
 
-          <label for="jadwal">Pilih Jadwal *</label>
-          <select id="jadwal" name="jadwal" required>
-            <option value="">-- Pilih jadwal belajar --</option>
-            <option value="reguler">Reguler (Pagi/Siang)</option>
-            <option value="malam">Kelas Malam</option>
-          </select>
+          <div class="field">
+            <label for="jadwal">Pilih Jadwal *</label>
+            <select id="jadwal" name="jadwal" required>
+              <option value="">-- Pilih jadwal belajar --</option>
+              <option value="reguler">Reguler (Pagi/Siang)</option>
+              <option value="malam">Kelas Malam</option>
+            </select>
+          </div>
 
-          <label for="pesan">Pesan / Target Belajar *</label>
-          <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan target belajarmu..." minlength="10" required></textarea>
+          <div class="field">
+            <label for="pesan">Pesan / Target Belajar *</label>
+            <textarea id="pesan" name="pesan" rows="3" placeholder="Tuliskan target belajarmu..." minlength="10" required></textarea>
+          </div>
 
-          <button type="submit" class="btn btn-primary">Kirim Pendaftaran</button>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Kirim Pendaftaran</button>
+          </div>
         </form>
       </div>
     </section>
